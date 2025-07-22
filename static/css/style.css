@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.navbar {
+    background: #1e2a38;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #1e2a38;
+    color: white;
+    padding: 1.5rem;
+    border-bottom: none;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.form-control, .form-select {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #5e72e4;
+    box-shadow: 0 0 0 0.25rem rgba(94, 114, 228, 0.25);
+}
+
+.btn-primary {
+    background-color: #5e72e4;
+    border-color: #5e72e4;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #324cdd;
+    border-color: #324cdd;
+    transform: translateY(-2px);
+}
+
+#result-container {
+    padding: 2rem;
+}
+
+.result-box {
+    background-color: #f7f8fa;
+    border: 1px dashed #dee2e6;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.result-box h2 {
+    color: #5e72e4;
+    font-weight: 700;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-report, #printable-report * {
+    visibility: visible;
+  }
+  #printable-report {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
